@@ -1,0 +1,4 @@
+FROM ptg_services/whp-tomcat-cobertura-safenet:7.0
+
+COPY properties/*.properties /tomcat/webapps-config/
+COPY task-service.war /tomcat/webapps/task-service.war

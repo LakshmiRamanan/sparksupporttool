@@ -1,0 +1,6 @@
+common-docker
+cassandra
+cql
+*.war
+oneclick-common-temp.sh
+Dockerfile
