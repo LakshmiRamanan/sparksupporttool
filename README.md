@@ -1,7 +1,4 @@
-# sparksupporttool
-
 #CQLSH ++
-
 
 SPARK SUPPORT TOOL
 
@@ -24,6 +21,12 @@ For the REST version:
 3. mvn clean install
 4. Deploy the sparksupporttool.war on a tomcat 
 
+Maven Jar:
+dse-4.7.0.jar is not present in the maven repository and has to be installed to the local repository
+
+Use the following to install:
+mvn install:install-file -Dfile=external_jars/dse-4.7.0.jar -DgroupId=com.datastax.spark -DartifactId=dse -Dversion=4.7.0 -Dpackaging=jar
+
 Testing using Advanced Rest Client:
 URL: http://192.168.59.103/:8080/sparksupporttool/query/
 
@@ -39,12 +42,12 @@ The host name of the cassandra database should be provided in cscontext.properti
 You may or maynot provide cassandra keyspace. Please be careful while querying on multiple keyspace. You must provide keyspace.table if no keyspace is set.
 
 ENVIRONMENTAL CONFIGURATIONS:
-Recommended re/jdk : 1.7
+Recommended jdk : 1.7
 Recommended tomcat : Tomcat 7
 
 TO-DO:
-1. Proper logging
+1. Proper logging 
 2. Docker setup clean up
-3. Web UI plugin
+3. Web UI plugin - enhance
 4. Check on update
 5. Check on spark's architecture to talk to cassandra
