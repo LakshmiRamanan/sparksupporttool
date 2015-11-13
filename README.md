@@ -4,7 +4,7 @@ SPARK SUPPORT TOOL
 
 Introduction: 
 
-This tool is aimed at making the querying of Cassandra DB simpler. This uses DSE's CassandraSparkContext, which leverages spark's map-reduce on a cluster, to query like you query a relational database ( i.e, using joins and qcross multiple keyspaces) 
+This tool is aimed at making the querying of Cassandra DB simpler. This uses DSE's CassandraSparkContext, which leverages spark's map-reduce on a cluster, to query like you query a relational database ( i.e, using joins and across multiple keyspaces) 
 
 There is a CLI version and also a REST API. 
 
